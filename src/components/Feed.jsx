@@ -1,10 +1,23 @@
+import { PostAddSharp } from '@material-ui/icons'
 import React from 'react'
+import "./Feed.css"
+import TweetBox from './Tweetbox'
+import Post from './Post'
 
 function Feed() {
   return (
-    <div>
+    <div className='feed'>
       {/* Header */}
-      <h2>Home</h2>
+      <div className="feed__header">
+        <h2>Home</h2>
+      </div>
+
+      {/* TweetBox */}
+      <TweetBox />
+
+      {/* Post */}
+      <Post />
+      
     </div>
   )
 }
